@@ -2,9 +2,9 @@ const longCatMaker = (n) => {
   const prefix = 'Long cat is l';
   const suffix = 'ng!';
   let os = '';
-  
+
   for (let i = 0; i < n; i++) {
-  	os += 'o';
+    os += 'o';
   }
   return prefix + os + suffix;
 };

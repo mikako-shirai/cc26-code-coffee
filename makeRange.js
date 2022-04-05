@@ -3,7 +3,7 @@ const makeRange = (n) => {
   if (n < 1) return output;
 
   for (let i = 1; i <= n; i++) {
-  	output.push(i);
+    output.push(i);
   }
   return output;
 };

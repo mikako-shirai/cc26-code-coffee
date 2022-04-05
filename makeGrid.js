@@ -6,11 +6,12 @@
  */
  const makeGrid = (n, value) => {
   const output = [];
+  
   for (let i = 0; i < n; i++) {
     const inner = [];
     for (let j = 0; j < n; j++) {
       inner.push(value);
-  	}
+    }
     output.push(inner);
   }
   return output;

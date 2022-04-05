@@ -1,8 +1,8 @@
 const powerOfTwoCheck = (n) => {
   let power = 1;
-  
+
   while (power <= n) {
-  	if (power * 2 === n) return true;
+    if (power * 2 === n) return true;
     power *= 2;
   }
   return false;

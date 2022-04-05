@@ -2,7 +2,7 @@ const makeWithinRange = (a, b) => {
   const output = [];
   const min = Math.min(a, b);
   const max = Math.max(a, b);
-  
+
   for (let i = min; i <= max; i++) {
     output.push(i);
   }

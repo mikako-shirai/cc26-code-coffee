@@ -1,7 +1,7 @@
 const evenOddSplitter = (arr) => {
   const evens = [];
   const odds = [];
-  
+
   for (let i = 0; i < arr.length; i++) {
     if (i % 2 === 0) {
       evens.push(arr[i]);

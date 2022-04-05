@@ -1,9 +1,10 @@
 const rotateArray = (arr, direction, n) => {
   const output = [];
-  
-  let start = direction === "LEFT" ? n % arr.length : arr.length - n % arr.length;
-  for (let i = start; i < start + arr.length; i++) {
-    output.push(arr[i % arr.length]);
+  const length = arr.length;
+  const start = direction === "LEFT" ? n % length : length - n % length;
+
+  for (let i = start; i < start + length; i++) {
+    output.push(arr[i % length]);
   }
   return output;
 };

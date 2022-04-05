@@ -5,7 +5,7 @@ const fourFuncMathCalc = (a, b, op) => {
     "MULTIPLY": (x, y) => x * y,
     "DIVIDE": (x, y) => x / y,
   };
-  
+
   return operation[op](a, b);
 };
 
