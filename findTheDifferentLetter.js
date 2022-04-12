@@ -1,11 +1,7 @@
 const findTheDifferentLetter = (str1, str2) => {
   const seen = {};
-  const strAll = (str1 + str2).split('');
 
-  for (let i = 0; i < strAll.length; i ++) {
-    const letter = strAll[i];
-    seen[letter] = seen[letter] ? false : true;
-  }
+  for (const letter of str1 + str2) seen[letter] = !seen[letter];
 
   for (const [key, value] of Object.entries(seen)) {
     if (value) return key;
